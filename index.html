@@ -151,10 +151,16 @@
            </script>  
        
 <body>
-       <button id="colorButton"> Click me to change colour </button>
+       <button onclick="myFunction()"> Click me to change colour </button>
        <script>
+
+         <div id="myDIV">
+           </div>
+         
          // Get a reference to the button element
-         var button = document.getElementById("colorButton");
+         function myFunction() {
+  document.getElementById("myDIV").style.backgroundColor = "random";
+         }
 
          //Function to change the button color
          function changeColor(){

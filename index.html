@@ -93,34 +93,37 @@
       
 <style>
     .image-right {
-        float: right;        /* Float the image to the right */
-        margin-left: 20px;    /* Space between the image and text */
-        margin-bottom: 15px;  /* Space at the bottom of the image */
-        width: 30%;           /* Image width set to 30% */
+        float: right;           /* Float the image to the right */
+        margin-left: 20px;       /* Space between image and text */
+        margin-bottom: 15px;     /* Space below the image */
+        width: 30%;              /* Set image width */
     }
 
     p {
         font-family: 'Aptos', sans-serif;
         font-size: 25px;
-        text-align: justify; /* Justify the text */
-        margin: 0;           /* Remove default margins */
-        line-height: 1.6;     /* Increase line height for readability */
+        text-align: justify;     /* Justify the text */
+        margin: 0;               /* Remove default margin */
+        line-height: 1.6;        /* Improve readability */
     }
 
-    /* Clearfix to ensure content after the floated image is displayed correctly */
+    /* Clearfix to fix float behavior */
     .clearfix {
-        clear: both;
+        clear: both;             /* Clear the float for subsequent content */
     }
 </style>
 
 <body>
+    <!-- Image floated to the right -->
     <img class="image-right" src="https://th.bing.com/th/id/OIP.j8C1SVLCyJLt2yzsP-qBqQHaE8?w=297&h=199&c=7&r=0&o=5&dpr=1.3&pid=1.7" alt="Albatross">
-
+    
+    <!-- Paragraph text that wraps around the image -->
     <p>
         The journey of human flight began with a simple observation: birds soaring effortlessly through the skies. While the Wright brothers often receive credit for the first powered flight, the journey toward aviation began centuries earlier. Throughout history, aviation innovators studied bird flight patterns, particularly focusing on lift, propulsion, and control. The Albatross, with its extraordinary ability to fly vast distances using minimal energy, became a key model for understanding the concept of aerodynamics. As Hallion brilliantly captures, "Aviation represents the quintessential human narrative—a story of dreams defying physical constraints, where each takeoff is a testament to our collective imagination" (Hallion 2020, p. 55).
     </p>
 
-    <div class="clearfix"></div> <!-- Clears the float and prevents overlap -->
+    <!-- Clearfix to clear the float -->
+    <div class="clearfix"></div>
 </body>
 
 

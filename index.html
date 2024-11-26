@@ -91,108 +91,88 @@
     <p class="ex1">
         <h1 style="font-size: 2em; font-weight: bold;"> The Dream of Flying </h1>
 
-      <style>
-     
-        .image-right {
-            float: right;                /* Float the image to the right */
-            margin-left: 20px;           /* Space between image and text */
-            margin-bottom: 20px;         /* Space below the image */
-            width: 30%;                  /* Image size (30% of the container width) */
-            max-width: 300px;            /* Limit image max-width */
-            vertical-align: top;         /* Align the image to the top */
-        }
-
-        /* Paragraph text styling */
-        p {
-            font-family: 'Aptos', sans-serif; /* Use Aptos font */
+ <style>
+        /* Global styles */
+        body {
+            font-family: 'Aptos', sans-serif; /* Use Aptos font for the entire document */
             font-size: 25px;                 /* Font size for readability */
-            text-align: justify;             /* Justify the text */
             line-height: 1.6;                /* Line height for proper spacing */
-            vertical-align: top;             /* Align text at the same height as image */
+            margin: 0;                       /* Remove default margin */
+            padding: 0;                      /* Remove default padding */
+            text-align: justify;             /* Justify the text */
         }
 
-     
-    </style>
-       
-<body>
+        /* Container for content */
+        .content {
+            width: 100%;                    /* Full width container */
+            max-width: 1200px;               /* Max width if you want to limit container width */
+            margin: 0 auto;                  /* Center align the content */
+        }
 
- 
-        <!-- Image floated to the right -->
-        <img class="image-right" src="https://th.bing.com/th/id/OIP.j8C1SVLCyJLt2yzsP-qBqQHaE8?w=297&h=199&c=7&r=0&o=5&dpr=1.3&pid=1.7" alt="Albatross">
-
-        <!-- Paragraph with proper styling -->
-        <p>
-          The journey of human flight began with a simple observation: birds soaring effortlessly through the skies. 
-          While the Wright brothers often receive credit for the first powered flight, the journey toward aviation began centuries earlier. 
-          Throughout history, aviation innovators studied bird flight patterns, particularly focusing on lift, propulsion, and control. 
-          The Albatross, with its extraordinary ability to fly vast distances using minimal energy, became a key model for understanding the
-          concept of aerodynamics. As Hallion brilliantly captures, "Aviation represents the quintessential human narrative—a story of dreams 
-          defying physical constraints, where each takeoff is a testament to our collective imagination" (Hallion 2020, p. 55).
-
-    </p>
-
-
-       
-First Steps in Flight
-By the early 1900s, these studies resulted in major breakthroughs, although not without facing some setbacks along the way. In 1908, just a year after the U.S. military awarded its first aircraft contract, 
-aviation witnessed its first fatal accident which served as a stark reminder of the challenges that lay ahead in humanity's quest for flight. After first successful flight of Wright brothers, 
-aviation technology advanced rapidly. Innovators like Glenn and Louis Blériot made significant contributions to aircraft design. Between 1908 and 1914, world saw significant advancements in this sector,
-with speed records being broken almost monthly. 
-
-The Start of Commercial Aviation
-The year 1914 marked a milestone with the first commercial passenger airline from St. Petersburg. According to experts, this initial phase was a key moment in the evolution of technology.
-"The period from 1908 to 1914 was a turning point in aviation, with aircraft evolving from experimental flights to reliable transportation, marking a major technological leap" (Smith, 2017, p. 82).
- By 1915, aircraft could reach altitudes of 20,000 feet and exceed speeds of 100 mph.
-
-
-
-
-
-   <style>
-       
+        /* Image styling for floating to the left */
         .image-left {
-            float: left;                /* Float the image to the left */
-            margin-right: 20px;          /* Space between image and text */
-            margin-bottom: 20px;         /* Space below the image */
-            width: 30%;                  /* Image size (30% of the container width) */
-            max-width: 300px;            /* Limit image max-width */
-            vertical-align: top;         /* Align the image to the top */
+            float: left;                    /* Float the image to the left */
+            margin-right: 20px;              /* Space between image and text */
+            margin-bottom: 20px;             /* Space below the image */
+            width: 30%;                      /* Image size (30% of the container width) */
+            max-width: 300px;                /* Limit image max-width */
+            vertical-align: top;             /* Align the image to the top */
         }
 
-        /* Paragraph text styling */
+        /* Paragraph styling to ensure proper spacing and avoid overflow */
         p {
-            font-family: 'Aptos', sans-serif; /* Use Aptos font */
-            font-size: 25px;                 /* Font size for readability */
-            text-align: justify;             /* Justify the text */
-            line-height: 1.6;                /* Line height for proper spacing */
-        
+            overflow-wrap: break-word;       /* Ensure text does not overflow */
         }
 
-      
+        /* Clearfix to clear the float and maintain layout */
+        .clearfix {
+            clear: both;                    /* Clears any floated elements */
+        }
     </style>
-
+</head>
 <body>
 
- 
-        <img class="image-left" src="https://th.bing.com/th/id/OIP.QSa-4X99b_xRqNtwwuFNtwHaE9?w=254&h=180&c=7&r=0&o=5&dpr=1.3&pid=1.7" alt="Early Aviators Image">
-
+    <div class="content">
+        <!-- Section 1: Dream of Flying -->
+        <h3 id="Introduction">Introduction</h3>
         <p>
-            Early Aviators and Innovation
-          
-          <br>
-          
-            It was then between 1915 and 1939, the aviation was revolutionized from a daredevil sport into an accepted form of transportation. Early aviators
-            were seen with almost magical wonder, "like gods who had stolen the secret of flight from the heavens themselves" (Corn 2017, p. 45). This public 
-            interest fuelled rapid tech progress, which led to the introduction of the groundbreaking Douglas DC-3 in 1936—the first aircraft that could make 
-            a profit just from passenger service. It could cruise at 185 mph while comfortably carrying 21 passengers, which in actual terms marked the true 
-            beginning of commercial air travel as we know it today.
+            <h1 style="font-size: 2em; font-weight: bold;">The Dream of Flying</h1>
+            The journey of human flight began with a simple observation: birds soaring effortlessly through the skies. 
+            While the Wright brothers often receive credit for the first powered flight, the journey toward aviation began centuries earlier. 
+            Throughout history, aviation innovators studied bird flight patterns, particularly focusing on lift, propulsion, and control. 
+            The Albatross, with its extraordinary ability to fly vast distances using minimal energy, became a key model for understanding the
+            concept of aerodynamics. As Hallion brilliantly captures, "Aviation represents the quintessential human narrative—a story of dreams 
+            defying physical constraints, where each takeoff is a testament to our collective imagination" (Hallion 2020, p. 55).
         </p>
 
-    
+        <!-- Image floated to the left -->
+        <img class="image-left" src="https://th.bing.com/th/id/OIP.j8C1SVLCyJLt2yzsP-qBqQHaE8?w=297&h=199&c=7&r=0&o=5&dpr=1.3&pid=1.7" alt="Albatross">
+
+        <!-- Section 2: Early Aviators and Innovation -->
+        <h3>First Steps in Flight</h3>
+        <p>
+            By the early 1900s, these studies resulted in major breakthroughs, although not without facing some setbacks along the way. In 1908, just a year after the U.S. military awarded its first aircraft contract, 
+            aviation witnessed its first fatal accident which served as a stark reminder of the challenges that lay ahead in humanity's quest for flight. After the first successful flight of the Wright brothers, 
+            aviation technology advanced rapidly. Innovators like Glenn and Louis Blériot made significant contributions to aircraft design. Between 1908 and 1914, the world saw significant advancements in this sector,
+            with speed records being broken almost monthly. 
+        </p>
+
+        <!-- Image floated to the left -->
+        <img class="image-left" src="https://th.bing.com/th/id/OIP.QSa-4X99b_xRqNtwwuFNtwHaE9?w=254&h=180&c=7&r=0&o=5&dpr=1.3&pid=1.7" alt="Early Aviators Image">
+
+        <!-- Section 3: Start of Commercial Aviation -->
+        <h3>The Start of Commercial Aviation</h3>
+        <p>
+            The year 1914 marked a milestone with the first commercial passenger airline from St. Petersburg. According to experts, this initial phase was a key moment in the evolution of technology.
+            "The period from 1908 to 1914 was a turning point in aviation, with aircraft evolving from experimental flights to reliable transportation, marking a major technological leap" (Smith, 2017, p. 82).
+            By 1915, aircraft could reach altitudes of 20,000 feet and exceed speeds of 100 mph.
+        </p>
+    </div>
+
+    <!-- Clearfix div to clear float and maintain layout -->
+    <div class="clearfix"></div>
 
 </body>
-
-
 
   
 

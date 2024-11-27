@@ -31,7 +31,7 @@
 
 
 
-
+</head>
     </style>
 
   <style>
@@ -66,60 +66,66 @@
       <tr>
       <td> <a href="#References"> References </td>
     </tr>
-    </table>
+    </table
 
-     <style>
-        /* Reset margin and padding for body */
+
+      <head>
+         /* Reset margin and padding for body */
         body {
             margin: 0;
             padding: 0;
             font-family: Aptos, sans-serif;
         }
 
+        /* Abstract Section Styling */
+        #Abstract {
+            text-align: center;
+            margin-top: 20px;
+        }
+
         /* Container for flex layout */
         .container {
             display: flex;
-            width: 100%;
-            padding: 20px;  /* Add some padding around the container */
+            justify-content: flex-start; /* Aligns content to the left */
+            gap: 20px; /* Space between text and image */
+            padding: 20px; /* Adds padding around the container */
             box-sizing: border-box;
         }
 
-        /* Text section - ensures the text aligns left and has space between the image */
+        /* Text section - ensures text is left-aligned */
         .text {
             flex: 1;
             text-align: left;  /* Keeps text left-aligned */
-            margin-right: 20px;  /* Adds space between text and image */
+            max-width: 65%;  /* Ensures the text doesn't stretch too wide */
         }
 
-        /* Image section - takes 30% of the container width */
+        /* Image section - ensures the image stays 30% of the container */
         .image {
             width: 30%;
-            height: auto;  /* Maintains image aspect ratio */
-            max-width: 100%;  /* Ensures image doesn't overflow */
+            height: auto; /* Maintains aspect ratio of the image */
+            max-width: 100%;  /* Prevents overflow */
         }
 
         /* Handling small screens with max-width */
         @media (max-width: 768px) {
             .container {
-                flex-direction: column;  /* Stacks the text and image vertically */
-                align-items: center;  /* Centers content */
-                padding: 10px;  /* Adjusts padding on smaller screens */
+                flex-direction: column; /* Stacks the text and image vertically */
+                align-items: center; /* Centers content */
             }
 
             .image {
-                width: 80%;  /* Makes image larger on small screens */
-                margin-top: 20px;  /* Adds space between text and image */
+                width: 80%; /* Makes the image larger on small screens */
+                margin-top: 20px; /* Adds space between text and image */
             }
 
             .text {
-                width: 100%;  /* Ensures text takes up full width */
-                margin-right: 0;  /* Removes margin in mobile view */
+                width: 100%; /* Ensures text takes full width */
+                margin-right: 0; /* Removes margin */
             }
         }
     </style>
-    </head>
-
-    <body>
+</head>
+<body>
       
      <h3 id="Abstract"> Abstract </h3>
 

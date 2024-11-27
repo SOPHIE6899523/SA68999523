@@ -71,63 +71,18 @@
 
       <head>
 
-        <style>
-        
-        body {
-            margin: 0;
-            padding: 0;
-            font-family: Aptos, sans-serif;
-           font-size: 25px; 
-        }
-
-        /* Introduction Section Styling */
-        #Introduction {
-            text-align: justify;
-            padding: 20px;
-        }
-
-        /* Container for flex layout */
-        .container {
-            display: flex;
-            justify-content: flex-start; /* Aligns content to the left */
-            gap: 20px; /* Adds space between text and image */
-            padding: 20px; /* Adds padding around the container */
-            box-sizing: border-box;
-        }
-
-        /* Text section - ensures text is left-aligned and doesn't overlap */
-        .text {
-            flex: 1;
-            text-align: left;  /* Keeps text left-aligned */
-            max-width: 65%;  /* Ensures the text doesn't stretch too wide */
-            padding-right: 20px; /* Adds space between text and image */
-        }
-
-        /* Image section - ensures the image stays 30% of the container */
-        .image {
-            width: 30%;
-            height: auto; /* Maintains aspect ratio of the image */
-            max-width: 100%;  /* Prevents overflow */
-            float: right; /* Aligns the image to the right */
-        }
-
+       <style>
+        body { margin: 0; padding: 0; font-family: Aptos, sans-serif; font-size: 25px; }
+        #Introduction { padding: 20px; text-align: justify; }
+        .container { display: flex; gap: 20px; padding: 20px; }
+        .text { flex: 1; max-width: 65%; padding-right: 20px; }
+        .image { width: 30%; height: auto; max-width: 100%; float: right; }
         @media (max-width: 768px) {
-            .container {
-                flex-direction: column; /* Stacks the text and image vertically */
-                align-items: center; /* Centers content */
-            }
-
-            .image {
-                width: 80%; /* Makes the image larger on small screens */
-                margin-top: 20px; /* Adds space between text and image */
-            }
-
-            .text {
-                width: 100%; /* Ensures text takes full width */
-                margin-right: 0; /* Removes margin */
-            }
+            .container { flex-direction: column; align-items: center; }
+            .image { width: 80%; margin-top: 20px; }
+            .text { width: 100%; margin-right: 0; }
         }
-    </style>
+</style>
 </head>
 <body>
       

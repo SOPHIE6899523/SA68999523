@@ -95,48 +95,51 @@
 
 
 <style>
-        /* Container for flex layout */
+    /* Container for flex layout */
+    .container {
+        display: flex;
+        align-items: flex-start;  /* Aligns content to the top */
+        justify-content: flex-start;  /* Aligns content to the left */
+        width: 100%;
+    }
+
+    /* Text section - ensures proper width */
+    .text {
+        flex: 1;
+        text-align: left;  /* Keeps text left-aligned */
+        max-width: 65%;  /* Ensures the text does not stretch too far */
+        margin-right: 20px;  /* Adds space between the text and the image */
+        box-sizing: border-box;  /* Prevents any overflow issues */
+    }
+
+    /* Image section - takes 30% of the container width */
+    .image {
+        width: 30%;
+        max-width: 100%;  /* Ensures image does not overflow */
+        height: auto;  /* Maintains image aspect ratio */
+        flex-shrink: 0;  /* Prevents the image from shrinking */
+    }
+
+    /* Handling small screens with max-width */
+    @media (max-width: 768px) {
         .container {
-            display: flex;
-            align-items: flex-start;  /* Aligns content to the top */
-            justify-content: space-between;
-            gap: 20px;  /* Adds space between text and image */
-            width: 100%;
+            flex-direction: column;  /* Stacks the text and image vertically */
+            align-items: center;  /* Centers content */
+            text-align: center;  /* Centers text */
         }
 
-        /* Text section - ensures proper width */
-        .text {
-            flex: 1;
-            text-align: left;  /* Keeps text left-aligned */
-            max-width: 65%;  /* Ensures the text does not stretch too far */
-            margin-right: 20px;  /* Adds space between the text and the image */
-        }
-
-        /* Image section - takes 30% of the container width */
         .image {
-            width: 30%;
-            max-width: 100%;  /* Ensures image does not overflow */
-            height: auto;  /* Maintains image aspect ratio */
+            width: 80%;  /* Makes image larger on small screens */
+            margin-top: 20px;  /* Adds space between text and image */
         }
 
-        /* Handling small screens with max-width */
-        @media (max-width: 768px) {
-            .container {
-                flex-direction: column;  /* Stacks the text and image vertically */
-                align-items: center;  /* Centers content */
-                text-align: center;  /* Centers text */
-            }
-
-            .image {
-                width: 80%;  /* Makes image larger on small screens */
-                margin-top: 20px;  /* Adds space between text and image */
-            }
-
-            .text {
-                width: 100%;  /* Ensures text is not cramped */
-            }
+        .text {
+            width: 100%;  /* Ensures text is not cramped */
+            margin-right: 0;  /* Removes any margin */
         }
-    </style>
+    }
+</style>
+
 
 <body>
 

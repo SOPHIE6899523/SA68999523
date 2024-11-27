@@ -93,24 +93,39 @@
     <p class="ex1">
         <h1 style="font-size: 2em; font-weight: bold;"> The Dream of Flying </h1>
 
-<style>
+ <style>
         /* Container for flex layout */
         .container {
             display: flex;
             align-items: center;
+            flex-wrap: wrap; /* Allows wrapping on smaller screens */
+            gap: 20px; /* Adds space between text and image */
         }
 
         /* Text section - takes up the remaining space */
         .text {
             flex: 1;
-            text-align: left;  /* Aligns the text to the left */
+            text-align: left;
             padding-right: 20px;  /* Optional: Adds space between text and image */
         }
 
         /* Image section - takes 30% of the container width */
         .image {
             width: 30%;
-            height: auto;  /* Maintains the aspect ratio */
+            max-width: 100%; /* Ensures the image doesn't exceed the container */
+            height: auto;  /* Maintains aspect ratio */
+        }
+
+        /* Add some padding and margins for better appearance on smaller screens */
+        @media (max-width: 768px) {
+            .container {
+                flex-direction: column; /* Stack content vertically on small screens */
+                text-align: center; /* Center text on smaller screens */
+            }
+            .image {
+                width: 80%; /* Allow the image to be larger on smaller screens */
+                margin-top: 20px; /* Add spacing between text and image */
+            }
         }
     </style>
 <body>
@@ -128,7 +143,7 @@ of dreams defying physical constraints, where each takeoff is a testament to our
 
         <!-- Image floated to the left -->
         <img class="image" src="https://th.bing.com/th/id/OIP.j8C1SVLCyJLt2yzsP-qBqQHaE8?w=297&h=199&c=7&r=0&o=5&dpr=1.3&pid=1.7" alt="Albatross">
-
+    </div>
 </body>
 
 

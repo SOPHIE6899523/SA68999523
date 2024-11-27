@@ -94,46 +94,46 @@
         <h1 style="font-size: 2em; font-weight: bold;"> The Dream of Flying </h1>
 
 
-      <style>
-        /* Ensures the container is always side by side (left and right) */
+<style>
+        /* Container for flex layout */
         .container {
             display: flex;
-            align-items: flex-start;  /* Keeps items aligned to the top */
+            align-items: flex-start;  /* Aligns content to the top */
             justify-content: space-between;
+            gap: 20px;  /* Adds space between text and image */
             width: 100%;
-            gap: 20px;
-            margin: 0 auto;  /* Centers the content */
         }
 
-        /* Text section - takes up the remaining space */
+        /* Text section - ensures proper width */
         .text {
             flex: 1;
-            text-align: left;  /* Ensures text stays left aligned */
-            max-width: 65%;  /* Limits text width to prevent cramping */
+            text-align: left;  /* Keeps text left-aligned */
+            max-width: 65%;  /* Ensures the text does not stretch too far */
+            margin-right: 20px;  /* Adds space between the text and the image */
         }
 
-        /* Image section - takes up 30% of the container width */
+        /* Image section - takes 30% of the container width */
         .image {
             width: 30%;
-            max-width: 100%;  /* Ensures image never overflows */
-            height: auto;  /* Maintains the image aspect ratio */
+            max-width: 100%;  /* Ensures image does not overflow */
+            height: auto;  /* Maintains image aspect ratio */
         }
 
-        /* Handling small screens with a max width */
+        /* Handling small screens with max-width */
         @media (max-width: 768px) {
             .container {
                 flex-direction: column;  /* Stacks the text and image vertically */
-                align-items: center;  /* Centers the content */
-                text-align: center;  /* Centers the text */
+                align-items: center;  /* Centers content */
+                text-align: center;  /* Centers text */
             }
 
             .image {
-                width: 80%;  /* Makes the image larger on small screens */
+                width: 80%;  /* Makes image larger on small screens */
                 margin-top: 20px;  /* Adds space between text and image */
             }
 
             .text {
-                width: 100%;  /* Ensures the text takes up full width */
+                width: 100%;  /* Ensures text is not cramped */
             }
         }
     </style>

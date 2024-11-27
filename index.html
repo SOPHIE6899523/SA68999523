@@ -71,34 +71,35 @@
 
       <head>
 
-        <style>
-         /* Reset margin and padding for body */
+       <style>
+        /* Reset margin and padding for body */
         body {
             margin: 0;
             padding: 0;
             font-family: Aptos, sans-serif;
         }
 
-        /* Abstract Section Styling */
-        #Abstract {
-            text-align: center;
-            margin-top: 20px;
+        /* Introduction Section Styling */
+        #Introduction {
+            text-align: left;
+            padding: 20px;
         }
 
         /* Container for flex layout */
         .container {
             display: flex;
             justify-content: flex-start; /* Aligns content to the left */
-            gap: 20px; /* Space between text and image */
+            gap: 20px; /* Adds space between text and image */
             padding: 20px; /* Adds padding around the container */
             box-sizing: border-box;
         }
 
-        /* Text section - ensures text is left-aligned */
+        /* Text section - ensures text is left-aligned and doesn't overlap */
         .text {
             flex: 1;
             text-align: left;  /* Keeps text left-aligned */
             max-width: 65%;  /* Ensures the text doesn't stretch too wide */
+            padding-right: 20px; /* Adds space between text and image */
         }
 
         /* Image section - ensures the image stays 30% of the container */

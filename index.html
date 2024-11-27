@@ -75,69 +75,42 @@
  <style>
         body { margin: 0; padding: 0; font-family: Aptos, sans-serif; font-size: 25px; }
         #Introduction { padding: 20px; text-align: justify; }
-        .container { 
-            display: flex; 
+
+        .section { 
+            display: flex;
             gap: 20px; 
             padding: 20px;
-            align-items: stretch; /* Ensure both image and text are stretched to the same height */
+            align-items: stretch;
         }
 
-        /* Text Section */
-        .text { 
-            flex: 1; 
-            max-width: 65%; 
+        .section .text {
+            flex: 1;
+            max-width: 65%;
             padding-left: 20px;
             display: flex;
             flex-direction: column;
-            justify-content: space-between; /* Ensure text fills available space evenly */
+            justify-content: space-between;
         }
 
-        /* Image Section */
-        .image { 
-            width: 30%; 
+        .section .image-left, .section .image {
+            width: 30%; /* Adjust image size */
             height: auto; 
             max-width: 100%; 
-            float: right; 
         }
 
-        /* New section for image-left (Image on the left side of text) */
-        .image-left { 
-            width: 30%; 
-            height: auto; 
-            max-width: 100%; 
-            float: left; 
-            margin-right: 20px; 
-        }
-
-        /* To align text to the right side while keeping the image on the left */
-        .text-right { 
-            text-align: right; 
+        .section img.image-left {
+            margin-right: 20px;
         }
 
         @media (max-width: 768px) {
-            .container { 
-                flex-direction: column; 
-                align-items: center; 
+            .section {
+                flex-direction: column;
+                align-items: center;
             }
-            .image { 
-                width: 80%; 
-                margin-top: 20px; 
+            .section .image-left, .section .image {
+                width: 80%;
+                margin-top: 20px;
             }
-            .text { 
-                width: 100%; 
-                margin-right: 0; 
-            }
-            .image-left { 
-                width: 80%; 
-                margin-right: 0; 
-                margin-bottom: 20px; 
-            }
-        }
-
-        /* For cases with no image, adjust the text section */
-        .container.no-image .text {
-            flex: 1 0 100%; /* Take up 100% of the container */
-            max-width: 100%; /* Allow the text to stretch */
         }
     </style>
         
@@ -228,50 +201,52 @@ commercial air travel as we know it today.
 
 
 <h3 id= "World War II: A Spark for Solutions"> <b> World War II: A Spark for Solutions </h3> </b> 
-
+  <p>
+    
 World War II redefined aviation in unimaginable ways. Warfare's urgent demands transformed small aircraft manufacturers into industrial giants, leading to remarkable technological advancements. The development
 of pressurised cabins enabled bombers like the B-29 Superfortress to reach previously impossible altitudes, leading to high-altitude passenger travel. As Aviation Week observes, "The technological 
 innovations driven by wartime necessity became the foundation for modern commercial aviation's greatest advances" (Aviation Week, 2019, p. 24). While male pilots went off to fight, the Women Airforce 
 Service Pilots (WASPs) too took to the skies, breaking the old ideas about who could be a pilot. As Corn insightfully notes, "These women didn't just break the glass ceiling; they soared above it at
 20,000 feet, proving that the sky truly was genderless" (Corn 2017, p. 112).
-
+  </p>
 
     <h3 id= "The Golden Age of Commercial Aviation"> <b> The Golden Age of Commercial Aviation </h3> </b>
-
+  <p>
 The post-war era marked a 'Golden Age' of commercial aviation. The transformation was remarkable: Yesterday's military aircrafts were turned into fancy "flying hotels" with beds and cocktail lounges.
 The Lockheed Constellation, or 'Connie,' was a real showstopper with its sleek curves and triple tail. Pilots even called it 'the ocean liner of the sky', boasting features that could rival a luxury cruise ship.
 As aviation historian Barrett notes, "The airplane cabin became a unique social space where passengers could experience the thrill of modernity while sipping martinis in an aluminium tube hurling through the
 stratosphere" (Barrett 2021, p. 78). 
+  </p>
 
 
     <h3 id= "The Modern Age: 1970s and Beyond"> <b> The Modern Age: 1970s and Beyond</h3> </b>
-
+  <p>
 By the 1970s, the arrival of the Boeing 747 'Jumbo Jet' made air travel accessible to more people, while the changes in rules in 1978 turned flying from a luxury into something that many could afford. 
 Airlines traded their piano lounges for additional seats, marking the end of a time where every flight felt like a special occasion.
-
-
+  </p>
+    
     <h3 id= "Aviation's Digital Shift"> <b> Aviation's Digital Shift </h3> </b>
-
+  <p>
 The 1990s and early 2000s brought aviation into the internet age, with flight booking becoming a simple mouse click. Traditional airlines found themselves competing with newcomers like Southwest and Ryanair,
 who proved that simple service could be both profitable and popular. Aviation researcher Davies observed that "the low-cost revolution didn't just change ticket prices - it fundamentally altered the psychology
 of air travel, transforming it from an occasional luxury into an everyday commodity much like taking a bus or train" (Davies 2016, p. 134). Ryanair became infamous with its "pay-for-everything" model, and its
 CEO once joked about charging passengers to use the bathroom - a statement that perfectly captured the conflict between affordability and service in modern aviation. This era brought important tech improvements, 
 as E-tickets replaced paper boarding passes, and the first trials of in-flight WiFi began, marking the start of connected aviation.	
+  </p>
+
     
 <h3 id= "Post-2010 Industry: Crisis and Challenges"> <b> Post-2010 Industry: Crisis and Challenges </h3> </b>
-
+<p> 
 The aviation industry from 2010 to 2024 saw new ideas and major challenges that reshaped the field. Aviation industry expert Roberts highlights, “The industry's response to successive crises - from 9/11's stringent
 security measures to COVID-19's complete transformation of travel protocols - demonstrates its extraordinary capacity for adaptation and reinvention” (Roberts, 2023, p. 167). While airlines improved passenger 
 experience with WiFi and explored sustainable technologies like electric aircraft, the pandemic's impact was particularly significant. As Chan writes, "COVID-19 triggered an evolution in months that 
 would have otherwise taken decades" (Chan, 2024, p. 45). 
-    
+</p>
     
 <h3 id= "The Sky Ahead: Navigating Tomorrow's Skies"> <b> The Sky Ahead: Navigating Tomorrow's Skies </h3> </b>
 
-
+  <p>
 Through these turbulent decades, aviation has proven its ability to not just survive, but also to innovate, setting the stage for an even more exciting future in the skies.
-
-      </pre>
   </p>
 
       <!-- //////////////////////////////////////////////////////////////////////////////// -->

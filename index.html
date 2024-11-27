@@ -72,17 +72,22 @@
       <head>
 
        <style>
-        body { margin: 0; padding: 0; font-family: Aptos, sans-serif; font-size: 25px; }
+           body { margin: 0; padding: 0; font-family: Aptos, sans-serif; font-size: 25px; }
         #Introduction { padding: 20px; text-align: justify; }
         .container { display: flex; gap: 20px; padding: 20px; }
         .text { flex: 1; max-width: 65%; padding-right: 20px; }
         .image { width: 30%; height: auto; max-width: 100%; float: right; }
+        
+        /* New section for image-left */
+        .image-left { width: 40%; height: auto; max-width: 100%; float: left; margin-right: 20px; }
+
         @media (max-width: 768px) {
             .container { flex-direction: column; align-items: center; }
             .image { width: 80%; margin-top: 20px; }
             .text { width: 100%; margin-right: 0; }
+            .image-left { width: 80%; margin-right: 0; margin-bottom: 20px; }
         }
-</style>
+    </style>
 </head>
 <body>
       
@@ -120,19 +125,24 @@
    
       <img class="image" <img src="Albatross.jpg" alt="Albatross"> 
     </div>
-</body>
 
+
+    <div class="container">
+            <div class="text">
  <h3 id= "First Steps in Flight"> <b> First Steps in Flight </h3> </b>
-
-        <p>
+              <p>
 By the early 1900s, these studies resulted in major breakthroughs, although not without facing some setbacks along the way. In 1908, just
 a year after the U.S. military awarded its first aircraft contract, aviation witnessed its first fatal accident which served as a stark reminder
 of the challenges that lay ahead in humanity's quest for flight. After the first successful flight of the Wright brothers, 
 aviation technology advanced rapidly. Innovators like Glenn and Louis Blériot made significant contributions to aircraft design. Between 1908 and 1914,
 the world saw significant advancements in this sector, with speed records being broken almost monthly. 
         </p>
+            </div>
 
         <img class="image-left" src="Wright Brother's Plane.jpg" alt="Wright Brother's Plane">
+      </div>
+    </div>
+</body>
 
         <h3 id= "The Start of Commercial Aviation"> <b>The Start of Commercial Aviation </h3> </b>
 

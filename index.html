@@ -79,9 +79,19 @@
     body {
       margin: 0;
       padding: 0;
-      font-family: Aptos, sans-serif;
-      font-size: 40px;
+      font-family: 'Aptos', sans-serif; /* Ensure that 'Aptos' font is applied */
+      font-size: 40px; /* Global font size for the body */
+      line-height: 1.6; /* Line height to improve readability */
     }
+
+    /* Apply font settings to headings and paragraphs to ensure consistency */
+    h1, h2, h3, p {
+      font-family: 'Aptos', sans-serif; /* Ensure all headings and paragraphs use Aptos */
+      font-size: 40px; /* Ensure font size is consistent */
+      margin: 0; /* Remove margin for consistency */
+      padding: 0; /* Remove padding if any */
+    }
+
 
     /* Abstract Section - Justified Text */
     #Abstract {

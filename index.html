@@ -81,7 +81,7 @@
     }
     #Introduction {
         padding: 20px;
-        text-align: justify;
+        text-align: justify; /* Ensure introduction text is justified */
     }
 
     /* Container for image and text sections */
@@ -101,6 +101,7 @@
         display: flex;
         flex-direction: column;
         justify-content: space-between; /* Ensure text fills available space evenly */
+        text-align: justify; /* Apply justified text alignment to all paragraphs */
     }
 
     /* General Image Section (default image size) */
@@ -118,14 +119,12 @@
         margin-right: 20px;
     }
 
-   .justified {
-            text-align: justify;
-        }
-
-   .image.b29 {
-    width: 90% !important;  /* Ensure image width is 100% of the container */
-    height: auto; /* Ensure height adjusts proportionally */
-}
+    .image.b29 {
+        width: 95% !important;  /* Ensure image width is 90% of the container */
+        height: auto; /* Ensure height adjusts proportionally */
+        display: block; /* Make the image a block-level element */
+        margin: 0 auto; /* Center the image horizontally */
+    }
 
     /* For aligning text to the right if needed */
     .text-right {
@@ -161,6 +160,7 @@
         flex: 1 0 100%;
         max-width: 100%;
     }
+  
 </style>
 
 
@@ -180,7 +180,10 @@
             <h3 id="The Dream of Flying"><b> The Dream of Flying </b></h3>
             <div class="container">
                 <div class="text">
+                  <p>  
                     The journey of human flight began with a simple observation: birds soaring effortlessly through the skies. While the Wright brothers often receive credit for the first powered flight, the journey toward aviation began centuries earlier. Throughout history, aviation innovators studied bird flight patterns, particularly focusing on lift, propulsion, and control. The Albatross, with its extraordinary ability to fly vast distances using minimal energy, became a key model for understanding the concept of aerodynamics. As Hallion brilliantly captures, "Aviation represents the quintessential human narrative—a story of dreams defying physical constraints, where each takeoff is a testament to our collective imagination" (Hallion 2020, p. 55).
+                  </p>
+                
                 </div>
       <img class="image" src="Albatross.jpg" alt="Albatross"> 
             </div>
@@ -192,7 +195,7 @@
         <img class="image-left" src="Wright Brother's Plane.jpg" alt="Wright Brother's Plane">
         <div class="text">
             <h3 id="First Steps in Flight"><b> First Steps in Flight </b></h3>
-            <p class="justified">
+            <p>
                 By the early 1900s, these studies resulted in major breakthroughs, although not without facing some setbacks along the way. In 1908, just a year after the U.S. military awarded its first aircraft contract, aviation witnessed its first fatal accident which served as a stark reminder of the challenges that lay ahead in humanity's quest for flight. After the first successful flight of the Wright brothers, aviation technology advanced rapidly. Innovators like Glenn and Louis Blériot made significant contributions to aircraft design. Between 1908 and 1914, the world saw significant advancements in this sector, with speed records being broken almost monthly.
             </p>
         </div>
@@ -230,7 +233,7 @@
         <div class="text">
           
         <h3 id="World War II: A Spark for Solutions"><b> World War II: A Spark for Solutions </b></h3>
-       <p class="justified">
+       <p>
             World War II redefined aviation in unimaginable ways. Warfare's urgent demands transformed small aircraft manufacturers into industrial giants, leading to remarkable technological advancements. The development of pressurized cabins enabled bombers like the B-29 Superfortress to reach previously impossible altitudes, leading to high-altitude passenger travel. As Aviation Week observes, "The technological innovations driven by wartime necessity became the foundation for modern commercial aviation's greatest advances" (Aviation Week, 2019, p. 24). While male pilots went off to fight, the Women Airforce Service Pilots (WASPs) too took to the skies, breaking the old ideas about who could be a pilot. As Corn insightfully notes, "These women didn't just break the glass ceiling; they soared above it at 20,000 feet, proving that the sky truly was genderless" (Corn 2017, p. 112).
         </p>
 
@@ -276,7 +279,7 @@ Airlines traded their piano lounges for additional seats, marking the end of a t
     
        <div class="text">
     <h3 id= "Aviation's Digital Shift"> <b> Aviation's Digital Shift </h3> </b>
-<p class="justified">
+  <p>
 The 1990s and early 2000s brought aviation into the internet age, with flight booking becoming a simple mouse click. Traditional airlines found themselves competing with newcomers like Southwest and Ryanair,
 who proved that simple service could be both profitable and popular. Aviation researcher Davies observed that "the low-cost revolution didn't just change ticket prices - it fundamentally altered the psychology
 of air travel, transforming it from an occasional luxury into an everyday commodity much like taking a bus or train" (Davies 2016, p. 134). Ryanair became infamous with its "pay-for-everything" model, and its

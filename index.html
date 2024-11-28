@@ -80,15 +80,11 @@
         font-size: 25px;
     }
 
-  #Abstract {
-        padding: 20px;
-        text-align: justify; /* Ensure introduction text is justified */
-    }
-  
-    #Introduction {
-        padding: 20px;
-        text-align: justify; /* Ensure introduction text is justified */
-    }
+  #Abstract, #Introduction {
+    padding: 20px;
+    text-align: justify; /* Ensure both Abstract and Introduction text are justified */
+    max-width: 85%; /* Limit width of these sections to 85% of the page or container */
+    margin: 0 auto; /* Center-align both sections horizontally */
 
 
     /* Container for image and text sections */
@@ -181,16 +177,18 @@
         </div>
     </div>
 
-   <div id="Introduction_InText">
+   
      
     <!-- Introduction Section -->
+  <div id="Introduction_InText">
     <div class="container">
         <div class="text">
           
             <h3 id="Introduction">Introduction</h3>
  </div>
     </div>
-
+  </div>
+  
        <div class="container">
         <div class="text">
           

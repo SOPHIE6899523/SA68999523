@@ -75,42 +75,69 @@
  <style>
         body { margin: 0; padding: 0; font-family: Aptos, sans-serif; font-size: 25px; }
         #Introduction { padding: 20px; text-align: justify; }
-
-        .section { 
-            display: flex;
+        .container { 
+            display: flex; 
             gap: 20px; 
             padding: 20px;
-            align-items: stretch;
+            align-items: stretch; /* Ensure both image and text are stretched to the same height */
         }
 
-        .section .text {
-            flex: 1;
-            max-width: 65%;
+        /* Text Section */
+        .text { 
+            flex: 1; 
+            max-width: 65%; 
             padding-left: 20px;
             display: flex;
             flex-direction: column;
-            justify-content: space-between;
+            justify-content: space-between; /* Ensure text fills available space evenly */
         }
 
-        .section .image-left, .section .image {
-            width: 30%; /* Adjust image size */
+        /* Image Section */
+        .image { 
+            width: 30%; 
             height: auto; 
             max-width: 100%; 
+            float: right; 
         }
 
-        .section img.image-left {
-            margin-right: 20px;
+        /* New section for image-left (Image on the left side of text) */
+        .image-left { 
+            width: 30%; 
+            height: auto; 
+            max-width: 100%; 
+            float: left; 
+            margin-right: 20px; 
+        }
+
+        /* To align text to the right side while keeping the image on the left */
+        .text-right { 
+            text-align: right; 
         }
 
         @media (max-width: 768px) {
-            .section {
-                flex-direction: column;
-                align-items: center;
+            .container { 
+                flex-direction: column; 
+                align-items: center; 
             }
-            .section .image-left, .section .image {
-                width: 80%;
-                margin-top: 20px;
+            .image { 
+                width: 80%; 
+                margin-top: 20px; 
             }
+            .text { 
+                width: 100%; 
+                margin-right: 0; 
+            }
+            .image-left { 
+                width: 80%; 
+                margin-right: 0; 
+                margin-bottom: 20px; 
+            }
+        }
+
+        /* For cases with no image, adjust the text section */
+        .container.no-image .text {
+            flex: 1 0 100%; /* Take up 100% of the container */
+            max-width: 100%; /* Allow the text to stretch */
         }
     </style>
         
@@ -140,8 +167,7 @@
     <p class="ex1">
         <h3 id= "The Dream of Flying"> <b> The Dream of Flying </h3> </b> 
       
-
-   <div class="section">
+ <div class="container">
        <div class="text">
             The journey of human flight began with a simple observation: birds soaring effortlessly through the skies. While the Wright brothers often receive credit
             for the first powered flight, the journey toward aviation began centuries earlier. Throughout history, aviation innovators studied bird flight patterns,
@@ -154,7 +180,7 @@
     </div>
 
 
- <div class="section">
+   <div class="container">
             <img class="image-left" src="Wright Brother's Plane.jpg" alt="Wright Brother's Plane">
             <div class="text">
  <h3 id= "First Steps in Flight"> <b> First Steps in Flight </h3> </b>
@@ -169,7 +195,7 @@ the world saw significant advancements in this sector, with speed records being 
         </div>
     </div>
 
-<div class="section">
+ <div class="container no-image">
         <div class="text">
         <h3 id= "The Start of Commercial Aviation"> <b>The Start of Commercial Aviation </h3> </b>
         <p>
@@ -181,7 +207,8 @@ the world saw significant advancements in this sector, with speed records being 
             </div>
 </div>
     
-  <div class="section">
+  
+<div class="container">
             <div class="text">
 <h3 id= "Early Aviators and Innovation"> <b> Early Aviators and Innovation </h3> </b>
         <p>
@@ -198,7 +225,6 @@ commercial air travel as we know it today.
     </div>
 
   </body>
-
 
 <h3 id= "World War II: A Spark for Solutions"> <b> World War II: A Spark for Solutions </h3> </b> 
   <p>

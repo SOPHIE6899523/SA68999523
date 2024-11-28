@@ -75,69 +75,58 @@
  <style>
         body { margin: 0; padding: 0; font-family: Aptos, sans-serif; font-size: 25px; }
         #Introduction { padding: 20px; text-align: justify; }
-        .container { 
-            display: flex; 
-            gap: 20px; 
+
+        /* General container for sections (with or without image) */
+        .container {
+            display: flex;
+            gap: 20px;
             padding: 20px;
-            align-items: stretch; /* Ensure both image and text are stretched to the same height */
+            align-items: stretch;
         }
 
         /* Text Section */
-        .text { 
-            flex: 1; 
-            max-width: 65%; 
+        .text {
+            flex: 1;
+            max-width: 65%;
             padding-left: 20px;
             display: flex;
             flex-direction: column;
-            justify-content: space-between; /* Ensure text fills available space evenly */
+            justify-content: space-between;
         }
 
         /* Image Section */
-        .image { 
-            width: 30%; 
-            height: auto; 
-            max-width: 100%; 
-            float: right; 
+        .image {
+            width: 30%;
+            height: auto;
+            max-width: 100%;
         }
 
         /* New section for image-left (Image on the left side of text) */
-        .image-left { 
-            width: 30%; 
-            height: auto; 
-            max-width: 100%; 
-            float: left; 
-            margin-right: 20px; 
+        .image-left {
+            width: 30%;
+            height: auto;
+            max-width: 100%;
+            float: left;
+            margin-right: 20px;
         }
 
-        /* To align text to the right side while keeping the image on the left */
-        .text-right { 
-            text-align: right; 
+        /* Add this rule to justify specific paragraphs */
+        .justified {
+            text-align: justify;
         }
 
         @media (max-width: 768px) {
-            .container { 
-                flex-direction: column; 
-                align-items: center; 
+            .container {
+                flex-direction: column;
+                align-items: center;
             }
-            .image { 
-                width: 80%; 
-                margin-top: 20px; 
+            .image, .image-left {
+                width: 80%;
+                margin-top: 20px;
             }
-            .text { 
-                width: 100%; 
-                margin-right: 0; 
+            .text {
+                width: 100%;
             }
-            .image-left { 
-                width: 80%; 
-                margin-right: 0; 
-                margin-bottom: 20px; 
-            }
-        }
-
-        /* For cases with no image, adjust the text section */
-        .container.no-image .text {
-            flex: 1 0 100%; /* Take up 100% of the container */
-            max-width: 100%; /* Allow the text to stretch */
         }
     </style>
         

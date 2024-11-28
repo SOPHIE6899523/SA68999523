@@ -72,68 +72,69 @@
       <head>
 
    
-   <style>
-        body { margin: 0; padding: 0; font-family: Aptos, sans-serif; font-size: 25px; }
-        #Introduction { padding: 20px; text-align: justify; }
+ <style>
+    body { margin: 0; padding: 0; font-family: Aptos, sans-serif; font-size: 25px; }
+    #Introduction { padding: 20px; text-align: justify; }
 
-        /* General container for sections (with or without image) */
+    /* General container for sections (with or without image) */
+    .container {
+        display: flex;
+        gap: 20px;
+        padding: 20px;
+        align-items: stretch;
+        flex-wrap: wrap;  /* Ensure content wraps nicely */
+    }
+
+    /* Text Section */
+    .text {
+        flex: 1;
+        max-width: 65%;
+        padding-left: 20px;
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+    }
+
+    /* Image Section */
+    .image {
+        width: 100%;
+        height: auto;
+        max-width: 100%;
+    }
+
+    /* New section for image-left (Image on the left side of text) */
+    .image-left {
+        width: 100%;  /* Adjust to full width in flexbox layout */
+        height: auto;
+        max-width: 100%;
+        margin-right: 20px;
+    }
+
+    /* Special class for Douglas DC 3 image to increase size */
+    .image-left.douglas {
+        width: 50%;  /* Adjust size to 50% of the container */
+    }
+
+    /* Add this rule to justify specific paragraphs */
+    .justified {
+        text-align: justify;
+    }
+
+    @media (max-width: 768px) {
         .container {
-            display: flex;
-            gap: 20px;
-            padding: 20px;
-            align-items: stretch;
-        }
-
-        /* Text Section */
-        .text {
-            flex: 1;
-            max-width: 65%;
-            padding-left: 20px;
-            display: flex;
             flex-direction: column;
-            justify-content: space-between;
+            align-items: center;
         }
+        .image, .image-left {
+            width: 80%;
+            margin-top: 20px;
+        }
+        .text {
+            width: 100%;
+        }
+    }
+</style> 
 
-        /* Image Section */
-        .image {
-            width: 30%;
-            height: auto;
-            max-width: 100%;
-        }
-
-        /* New section for image-left (Image on the left side of text) */
-        .image-left {
-            width: 30%;
-            height: auto;
-            max-width: 100%;
-            float: left;
-            margin-right: 20px;
-        }
-
-        /* Special class for Douglas DC 3 image to increase size */
-        .image-left.douglas {
-            width: 50%;  /* Adjust size to 50% of the container */
-        }
-
-        /* Add this rule to justify specific paragraphs */
-        .justified {
-            text-align: justify;
-        }
-
-        @media (max-width: 768px) {
-            .container {
-                flex-direction: column;
-                align-items: center;
-            }
-            .image, .image-left {
-                width: 80%;
-                margin-top: 20px;
-            }
-            .text {
-                width: 100%;
-            }
-        }
-    </style> 
         
 </head>
 <body>
@@ -173,6 +174,8 @@
    
       <img class="image" src="Albatross.jpg" alt="Albatross"> 
     </div>
+        </div>
+ </div>
 
 
    <div class="container">

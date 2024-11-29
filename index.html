@@ -122,19 +122,23 @@
       height: 100%; /* Ensures text container fills the same height as image */
     }
 
-    figure {
-  text-align: left;  /* Align the caption to the center */
-  margin: 20px 0;      /* Add spacing around the figure */
+    /* Ensure the image size is as before: 35% width with auto height */
+.image {
+  width: 35%; /* Image takes up 35% of the container's width */
+  height: auto; /* Maintains aspect ratio */
+  max-width: 100%; /* Prevents image from overflowing container */
+  object-fit: cover; /* Ensures image fits proportionally */
+}
+
+/* Optional: Add specific styles for the caption */
+figure {
+  text-align: left;  /* Align the caption to the left (or adjust as needed) */
+  margin: 20px 0;    /* Add spacing around the figure */
 }
 
 figcaption {
   font-style: italic;  /* Optional: style for the caption text */
-  color: #000000;         /* Optional: change the text color */
-}
-
-   .image {
-  height: auto; /* Ensure the height adjusts automatically */
-  max-width: 100%; /* Allow the image to take the maximum width of its container without resizing */
+  color: #000000;      /* Optional: change the text color */
 }
 
     /* Image-left (for image on the left side of text) */
@@ -159,12 +163,12 @@ figcaption {
       text-align: right;
     }
 
-    /* Responsive design for smaller screens */
     @media (max-width: 768px) {
-      .container {
-        flex-direction: column;
-        align-items: center;
-      }
+  .image {
+    width: 80%;  /* You can adjust this to keep the image size reasonable on small screens */
+    margin-top: 20px;
+  }
+}
 
       /* Adjust images to be larger on small screens */
       .image, .image-left {

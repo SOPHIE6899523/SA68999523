@@ -104,7 +104,7 @@
     display: flex;
     gap: 20px;
     padding: 20px;
-    align-items: stretch;
+    align-items: flex-start;  /* Align the image and text properly */
     flex-wrap: wrap;
   }
 
@@ -122,7 +122,7 @@
     height: 100%;
   }
 
-  /* General Image Section (default image size) */
+  /* General Image Section */
   .image {
     width: 35%;
     height: auto;
@@ -130,13 +130,26 @@
     object-fit: cover;
   }
 
-  /* Albatross-specific adjustment (only this image) */
+  /* Albatross image-specific class */
   .image-albatross {
-    width: 35%;  /* Same width as other images, change if needed */
+    width: 35%;
     height: auto;
     max-width: 100%;
     object-fit: cover;
-    margin-left: 20px; /* Spacing between text and image */
+    margin-left: 20px;  /* Margin for spacing between text and image */
+  }
+
+  /* Styling for image captions */
+  figure {
+    text-align: center;  /* Center-align the caption */
+    margin: 0;
+    padding: 10px 0;
+  }
+
+  figcaption {
+    font-style: italic;
+    color: #000000;
+    font-size: 18px;  /* Adjust caption font size */
   }
 
   /* Target the B-29 image to remain the same size */
@@ -164,7 +177,7 @@
       width: 100%;
     }
 
-    /* Remove margin from image-albatross in mobile view */
+    /* Remove margin from Albatross image on mobile */
     .image-albatross {
       width: 80%;
       margin-left: 0;

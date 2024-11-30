@@ -77,112 +77,115 @@
 
      <head>
   <style>
-    /* Ensure body uses the correct font */
-    body {
-      margin: 0;
-      padding: 0;
-      font-family: 25px; /* Global font size for the body */
-      line-height: 1.6; /* Line height to improve readability */
-    }
+   /* Ensure body uses the correct font */
+body {
+  margin: 0;
+  padding: 0;
+  font-family: 'Aptos', sans-serif; /* Global font for the body */
+  font-size: 25px; /* Global font size for the body */
+  line-height: 1.6; /* Line height to improve readability */
+}
 
-   
-    /* Abstract Section - Justified Text */
-    #Abstract {
-      padding: 20px
-      text-align: justify;
-      margin: 0 20px;
-      width: 100%;
-      
-    }
+/* Abstract Section - Justified Text */
+#Abstract {
+  padding: 20px;
+  text-align: justify;
+  margin: 0 20px;
+  width: 100%;
+}
 
-    /* Introduction Section - Justified Text */
-    #Introduction {
-      padding: 20px;
-      text-align: justify;
-    }
+/* Introduction Section - Justified Text */
+#Introduction {
+  padding: 20px;
+  text-align: justify;
+}
 
-    /* Container for image and text sections */
-    .container {
-      display: flex;
-      gap: 20px;
-      padding: 20px;
-      align-items: stretch; /* Ensures both image and text are stretched to same height */
-      flex-wrap: wrap; /* Allow wrapping on smaller screens */
-    }
+/* Container for image and text sections */
+.container {
+  display: flex;
+  gap: 20px;
+  padding: 20px;
+  align-items: stretch; /* Ensures both image and text are stretched to same height */
+  flex-wrap: wrap; /* Allow wrapping on smaller screens */
+}
 
-    /* Text Section */
-    .text {
-      flex: 1;
-      max-width: 65%;
-      padding-left: 20px;
-      display: flex;
-      flex-direction: column;
-      justify-content: space-between; /* Ensures text fills available space evenly */
-        font-family: 'Aptos', sans-serif; /* Apply font globally */
-  font-size: 25px; /* Apply font size globally */
-      text-align: justify;
-      height: 100%; /* Ensures text container fills the same height as image */
-    }
-    
-    /* General Image Section (default image size) */
-    .image {
-      width: 35%;
-      height: auto;
-      max-width: 100%;
-      object-fit: cover; /* Ensures the image fits proportionally */
-    }
+/* Text Section */
+.text {
+  flex: 1;
+  max-width: 65%;
+  padding-left: 20px; /* Aligns text with consistent left margin */
+  padding-right: 20px; /* Ensures there's space on the right */
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between; /* Ensures text fills available space evenly */
+  text-align: justify;
+  height: 100%; /* Ensures text container fills the same height as image */
+}
 
-    /* Image-left (for image on the left side of text) */
-    .image-left {
-      width: 35%;
-      height: auto;
-      max-width: 100%;
-      margin-right: 20px;
-      object-fit: cover;
-    }
+/* General Image Section (default image size) */
+.image {
+  width: 35%;
+  height: auto;
+  max-width: 100%;
+  object-fit: cover; /* Ensures the image fits proportionally */
+}
 
-   .image.b29 {
-      width: 95% !important; /* Ensures image width is 95% of the container */
-      height: auto;
-      display: block;
-      margin: 0 auto;
-    }
-    
-    /* For aligning text to the right if needed */
-    .text-right {
-      text-align: right;
-    }
+/* Image-left (for image on the left side of text) */
+.image-left {
+  width: 35%;
+  height: auto;
+  max-width: 100%;
+  margin-right: 20px;
+  object-fit: cover;
+}
 
-    /* Responsive design for smaller screens */
-    @media (max-width: 768px) {
-      .container {
-        flex-direction: column;
-        align-items: center;
-      }
+.image.b29 {
+  width: 95% !important; /* Ensures image width is 95% of the container */
+  height: auto;
+  display: block;
+  margin: 0 auto;
+}
 
-      /* Adjust images to be larger on small screens */
-      .image, .image-left {
-        width: 80%;
-        margin-top: 20px;
-      }
+/* For aligning text to the right if needed */
+.text-right {
+  text-align: right;
+}
 
-      .text {
-        width: 100%;
-      }
+/* Responsive design for smaller screens */
+@media (max-width: 768px) {
+  .container {
+    flex-direction: column;
+    align-items: center;
+  }
 
-      /* Remove margin from image-left in mobile view */
-      .image-left {
-        width: 80%;
-        margin-right: 0;
-        margin-bottom: 20px;
-      }
-    }
+  /* Adjust images to be larger on small screens */
+  .image, .image-left {
+    width: 80%;
+    margin-top: 20px;
+  }
 
-    /* For containers with no image, adjust text section to take full width */
-    .container.no-image .text {
-      flex: 1 0 100%;
-      max-width: 100%;
-    }
+  .text {
+    width: 100%;
+  }
+
+  /* Remove margin from image-left in mobile view */
+  .image-left {
+    width: 80%;
+    margin-right: 0;
+    margin-bottom: 20px;
+  }
+}
+
+/* For containers with no image, adjust text section to take full width */
+.container.no-image .text {
+  flex: 1 0 100%;
+  max-width: 100%;
+}
+
+/* For sections where you want uniform left alignment */
+.text {
+  padding-left: 30px; /* Adds uniform left padding to align text consistently */
+  margin-left: 0; /* Removes any additional left margin */
   </style>
 </head>
   

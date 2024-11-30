@@ -142,17 +142,11 @@
     }
 
    .image.b29 {
-    width: 95% !important; /* Ensures image width is 95% of the container */
-    height: auto;
-    display: block;
-    margin: 0 auto;
-}
-
-.image-b29 {
-    width: 100%; /* Ensures image fits the container's width */
-    height: auto; 
-    object-fit: cover;
-}
+      width: 95% !important; /* Ensures image width is 95% of the container */
+      height: auto;
+      display: block;
+      margin: 0 auto;
+    }
     
     /* For aligning text to the right if needed */
     .text-right {
@@ -287,7 +281,7 @@
       <br>
    <br>
 
-  <div class="container no-image">
+ <div class="container no-image">
     <div class="text">
         <h3 id="World War II: A Spark for Solutions"><b>World War II: A Spark for Solutions</b></h3>
         <p>
@@ -295,14 +289,16 @@
         </p>
     </div>
 
-   <!-- Image with reduced space from paragraph -->
-<div class="image b29" style="text-align: center;">
-    <img src="B 29 Superfortress.jpg" alt="B-29 Superfortress" class="image-b29">
-    <figcaption style="text-align: center; font-style: italic;">Fig. 4 B-29 Superfortress</figcaption>
+    <!-- B-29 Image Block with Reduced Space Between Paragraph -->
+    <div style="width: 95%; margin: 20px auto; text-align: center;">
+        <img src="B 29 Superfortress.jpg" alt="B-29 Superfortress" style="width: 100%; height: auto; object-fit: cover;">
+        <figcaption style="text-align: center; font-style: italic;">Fig. 4 B-29 Superfortress</figcaption>
+    </div>
 </div>
-    
-      <br>
 
+<br>
+
+<!-- Golden Age of Commercial Aviation Section with Proper Spacing -->
 <div class="container">
     <div class="text" style="flex: 1; padding-right: 20px;">
         <h3 id="The Golden Age of Commercial Aviation"><b>The Golden Age of Commercial Aviation</b></h3>
@@ -311,15 +307,17 @@
         </p>
     </div>
 
-    <!-- Image and caption on the right -->
-    <div style="float: right; width: 35%; margin-left: 20px;">
+    <!-- Image of Lockheed Constellation on the right with Proper Spacing -->
+    <div style="float: right; width: 35%; margin-left: 20px; margin-top: 20px;">
         <img src="Lockheed Constellation.jpg" alt="Lockheed Constellation/Connie" style="width: 100%; height: auto; object-fit: cover;">
-        <figcaption style="text-align: center; font-style: italic;">Fig. 5 Connie </figcaption>
+        <figcaption style="text-align: center; font-style: italic;">Fig. 5 Connie</figcaption>
     </div>
 </div>
 
+      <br>
+      <br>
 
-<div class="container no-image">
+      <div class="container no-image">
     <div class="text">
         <h3 id="The Modern Age: 1970s and Beyond"><b>The Modern Age: 1970s and Beyond</b></h3>
         <p>

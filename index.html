@@ -110,19 +110,30 @@
       flex-wrap: wrap; /* Allow wrapping on smaller screens */
     }
 
-    /* Text Section */
     .text {
-      flex: 1;
-      max-width: 65%;
-      padding-left: 20px;
-      display: flex;
-      flex-direction: column;
-      justify-content: space-between; /* Ensures text fills available space evenly */
-        font-family: 'Aptos', sans-serif; /* Apply font globally */
-  font-size: 25px; /* Apply font size globally */
-      text-align: justify;
-      height: 100%; /* Ensures text container fills the same height as image */
-    }
+  font-family: 'Aptos', sans-serif;  /* Font for the text */
+  font-size: 25px;  /* Font size for text */
+  text-align: justify;  /* Justify text alignment for better readability */
+  padding-left: 20px;  /* Left padding for consistent margin */
+  padding-right: 20px; /* Right padding */
+  margin-left: 0;      /* Ensure no left margin */
+  margin-right: 0;     /* Ensure no right margin */
+  line-height: 1.6;    /* Add line height for better readability */
+}
+
+    /* Apply general styles for all paragraphs */
+.text p {
+  margin-bottom: 20px;  /* Add spacing between paragraphs */
+  margin-top: 0;        /* Remove extra margin at the top of paragraphs */
+}
+
+    /* For ensuring uniform behavior in the Introduction section, apply the same rules */
+#Introduction, #TheDreamOfFlying, #FirstStepsInFlight, #StartOfCommercialAviation, 
+#EarlyAviators, #GoldenAge, #ModernAge, #DigitalShift, #Post2010Industry, #SkyAhead {
+  padding-left: 20px;   /* Ensure consistent left padding for all sections */
+  margin-left: 0;       /* No extra margin on the left */
+  margin-right: 0;      /* No extra margin on the right */
+}
     
     /* General Image Section (default image size) */
     .image {

@@ -129,6 +129,12 @@ body {
     flex-direction: column;
     align-items: center;
   }
+
+   /* Adjust images to be larger on small screens */
+      .image, .image-left {
+        width: 80%;
+        margin-top: 20px;
+      }
   
   .text {
     width: 100%;
@@ -141,6 +147,11 @@ body {
   max-width: 100%;
 }
 
+  /* For containers with no image, adjust text section to take full width */
+    .container.no-image .text {
+      flex: 1 0 100%;
+      max-width: 100%;
+    }
 
   </style>
 </head>

@@ -122,6 +122,10 @@ body {
       height: 100%; /* Ensures text container fills the same height as image */
     }
 
+ /* For aligning text to the right if needed */
+    .text-right {
+      text-align: right;
+    }
 
 /* Responsive design for smaller screens */
 @media (max-width: 768px) {
@@ -139,13 +143,6 @@ body {
   .text {
     width: 100%;
   }
-
-
-/* For containers with no image, adjust text section to take full width */
-.container.no-image .text {
-  flex: 1 0 100%;
-  max-width: 100%;
-}
 
   /* For containers with no image, adjust text section to take full width */
     .container.no-image .text {

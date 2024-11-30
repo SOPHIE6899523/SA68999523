@@ -77,7 +77,7 @@
 
      <head>
   <style>
-   /* Ensure body uses the correct font */
+ /* Ensure body uses the correct font */
 body {
   margin: 0;
   padding: 0;
@@ -113,13 +113,14 @@ body {
 .text {
   flex: 1;
   max-width: 65%;
-  padding-left: 20px; /* Aligns text with consistent left margin */
-  padding-right: 20px; /* Ensures there's space on the right */
+  padding-left: 20px; /* Left padding for the text */
+  padding-right: 20px; /* Right padding to ensure proper space */
   display: flex;
   flex-direction: column;
   justify-content: space-between; /* Ensures text fills available space evenly */
   text-align: justify;
   height: 100%; /* Ensures text container fills the same height as image */
+  margin-left: 0; /* Ensures no extra left margin */
 }
 
 /* General Image Section (default image size) */
@@ -149,6 +150,10 @@ body {
 /* For aligning text to the right if needed */
 .text-right {
   text-align: right;
+}
+
+    #WorldWarII {
+  padding-left: 30px;
 }
 
 /* Responsive design for smaller screens */
@@ -182,10 +187,12 @@ body {
   max-width: 100%;
 }
 
-/* For sections where you want uniform left alignment */
+/* Fix left alignment for World War II section */
+#WorldWarII, /* Add IDs for other sections that need left alignment */
 .text {
-  padding-left: 30px; /* Adds uniform left padding to align text consistently */
-  margin-left: 0; /* Removes any additional left margin */
+  padding-left: 30px; /* Consistent padding on the left */
+  margin-left: 0; /* Remove additional left margin */
+}
   </style>
 </head>
   
@@ -286,7 +293,7 @@ body {
       
 <div class="container no-image">
     <div class="text">
-        <h3 id="World War II: A Spark for Solutions"><b>World War II: A Spark for Solutions</b></h3>
+       <h3 id="WorldWarII"><b> World War II: A Spark for Solutions</h3> </b>
         <p style="margin-top: 0; margin-bottom: 10px;">
             World War II redefined aviation in unimaginable ways. Warfare's urgent demands transformed small aircraft manufacturers into industrial giants, leading to remarkable technological advancements. The development of pressurized cabins enabled bombers like the B-29 Superfortress to reach previously impossible altitudes, leading to high-altitude passenger travel. As Aviation Week observes, "The technological innovations driven by wartime necessity became the foundation for modern commercial aviation's greatest advances" (Aviation Week, 2019, p. 24). While male pilots went off to fight, the Women Airforce Service Pilots (WASPs) too took to the skies, breaking the old ideas about who could be a pilot. As Corn insightfully notes, "These women didn't just break the glass ceiling; they soared above it at 20,000 feet, proving that the sky truly was genderless" (Corn 2017, p. 112).
         </p>

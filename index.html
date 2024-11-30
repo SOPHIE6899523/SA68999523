@@ -141,14 +141,19 @@
       object-fit: cover;
     }
 
-    /* Target the B-29 image to remain the same size */
-    .image.b29 {
-      width: 95% !important; /* Ensures image width is 95% of the container */
-      height: auto;
-      display: block;
-      margin: 0 auto;
-    }
+   .image.b29 {
+    width: 95% !important; /* Ensures image width is 95% of the container */
+    height: auto;
+    display: block;
+    margin: 0 auto;
+}
 
+.image-b29 {
+    width: 100%; /* Ensures image fits the container's width */
+    height: auto; 
+    object-fit: cover;
+}
+    
     /* For aligning text to the right if needed */
     .text-right {
       text-align: right;
@@ -282,7 +287,7 @@
       <br>
    <br>
 
-   <div class="container no-image">
+  <div class="container no-image">
     <div class="text">
         <h3 id="World War II: A Spark for Solutions"><b>World War II: A Spark for Solutions</b></h3>
         <p>
@@ -290,13 +295,12 @@
         </p>
     </div>
 
-    <!-- Image with reduced space from paragraph -->
-    <div style="width: 95%; margin: 10px auto; text-align: center;">
-        <img src="B 29 Superfortress.jpg" alt="B-29 Superfortress" style="width: 100%; height: auto; object-fit: cover;">
-        <figcaption style="text-align: center; font-style: italic;">Fig. 4 B-29 Superfortress</figcaption>
-    </div>
+   <!-- Image with reduced space from paragraph -->
+<div class="image b29" style="text-align: center;">
+    <img src="B 29 Superfortress.jpg" alt="B-29 Superfortress" class="image-b29">
+    <figcaption style="text-align: center; font-style: italic;">Fig. 4 B-29 Superfortress</figcaption>
 </div>
-
+    
       <br>
 
 <div class="container">
@@ -314,7 +318,6 @@
     </div>
 </div>
 
-<div style="clear: both;"></div>
 
 <div class="container no-image">
     <div class="text">

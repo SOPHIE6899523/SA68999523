@@ -153,35 +153,7 @@
       text-align: right;
     }
 
-    /* Responsive design for smaller screens */
-    @media (max-width: 768px) {
-      .container {
-        flex-direction: column;
-        align-items: center;
-      }
-
-      /* Adjust images to be larger on small screens */
-      .image, .image-left {
-        width: 80%;
-        margin-top: 20px;
-      }
-
-      /* Update the left margin for all paragraphs within .text */
-.text p {
-  margin-left: 10px; /* Apply 10px left margin to all paragraphs */
-}
-      .text {
-        width: 100%;
-      }
-
-      /* Remove margin from image-left in mobile view */
-      .image-left {
-        width: 80%;
-        margin-right: 0;
-        margin-bottom: 20px;
-      }
-    }
-    
+        
 /* Adjust text container (no-image) to maintain consistent margins */
 .container.no-image .text {
   padding-left: 20px; /* Ensures left margin for all paragraphs */
@@ -196,6 +168,38 @@
   margin-left: 0; /* Remove left margin from h3 and p */
   padding-left: 0; /* Remove left padding from h3 and p */
 }
+
+    
+      /* Update the left margin for all paragraphs within .text */
+.text p {
+  margin-left: 10px; /* Apply 10px left margin to all paragraphs */
+}
+    
+    /* Responsive design for smaller screens */
+    @media (max-width: 768px) {
+      .container {
+        flex-direction: column;
+        align-items: center;
+      }
+
+      /* Adjust images to be larger on small screens */
+      .image, .image-left {
+        width: 80%;
+        margin-top: 20px;
+      }
+
+      .text {
+        width: 100%;
+      }
+
+      /* Remove margin from image-left in mobile view */
+      .image-left {
+        width: 80%;
+        margin-right: 0;
+        margin-bottom: 20px;
+      }
+    }
+
   </style>
 </head>
   

@@ -75,125 +75,26 @@
     </table
 
 
-     <head>
+  <head>
   <style>
-    /* Ensure body uses the correct font */
-    body {
-      margin: 0;
-      padding: 0;
-      font-family: 25px; /* Global font size for the body */
-      line-height: 1.6; /* Line height to improve readability */
-    }
-
-  /* Ensure consistent left alignment for all text in Abstract and Introduction sections */
-#Abstract {
-  padding-left: 20px; /* Add consistent left padding for Abstract and Introduction headings */
-}
-
-/* Ensure uniform margin for headings within the Introduction and Abstract sections */
-#Abstract h3 {
-  margin-left: 0; /* Remove any extra margin for headings */
-  padding-left: 0; /* Remove any extra padding */
-}
-
-/* Ensure consistent left margin for paragraphs under Introduction and Abstract */
-#Abstract p {
-  margin-left: 20px; /* Apply consistent left margin for paragraphs */
-  text-align: justify; /* Ensure paragraphs are justified */
-}
-
-    
-    /* Introduction Section - Justified Text */
-    #Introduction {
-      padding: 20px;
-      text-align: justify;
-    }
-
-    /* Container for image and text sections */
-    .container {
-      display: flex;
-      gap: 20px;
-      padding: 20px;
-      align-items: stretch; /* Ensures both image and text are stretched to same height */
-      flex-wrap: wrap; /* Allow wrapping on smaller screens */
-    }
-
-    /* Text Section */
-    .text {
-      flex: 1;
-      max-width: 65%;
-      padding-left: 20px;
-      display: flex;
-      flex-direction: column;
-      justify-content: space-between; /* Ensures text fills available space evenly */
-        font-family: 'Aptos', sans-serif; /* Apply font globally */
-  font-size: 25px; /* Apply font size globally */
-      text-align: justify;
-      height: 100%; /* Ensures text container fills the same height as image */
-    }
-    
-    /* General Image Section (default image size) */
-    .image {
-      width: 35%;
-      height: auto;
-      max-width: 100%;
-      object-fit: cover; /* Ensures the image fits proportionally */
-    }
-
-    /* Image-left (for image on the left side of text) */
-    .image-left {
-      width: 35%;
-      height: auto;
-      max-width: 100%;
-      margin-right: 20px;
-      object-fit: cover;
-    }
-
-   .image.b29 {
-      width: 95% !important; /* Ensures image width is 95% of the container */
-      height: auto;
-      display: block;
-      margin: 0 auto;
-    }
-    
-    /* For aligning text to the right if needed */
-    .text-right {
-      text-align: right;
-    }
-
-    /* Responsive design for smaller screens */
+    body { margin: 0; padding: 0; font-family: Arial, sans-serif; font-size: 16px; line-height: 1.6; }
+    #Abstract { padding: 20px; text-align: justify; margin: 0 20px; width: 100%; }
+    #Introduction { padding: 20px; text-align: justify; }
+    .container { display: flex; gap: 20px; padding: 20px; align-items: stretch; flex-wrap: wrap; }
+    .text { flex: 1; max-width: 65%; padding-left: 20px; display: flex; flex-direction: column; justify-content: space-between; font-family: 'Aptos', sans-serif; font-size: 25px; text-align: justify; height: 100%; }
+    .image { width: 35%; height: auto; max-width: 100%; object-fit: cover; }
+    .image-left { width: 35%; height: auto; max-width: 100%; margin-right: 20px; object-fit: cover; }
+    .image.b29 { width: 95% !important; height: auto; display: block; margin: 0 auto; }
+    .text-right { text-align: right; }
     @media (max-width: 768px) {
-      .container {
-        flex-direction: column;
-        align-items: center;
-      }
-
-      /* Adjust images to be larger on small screens */
-      .image, .image-left {
-        width: 80%;
-        margin-top: 20px;
-      }
-
-      .text {
-        width: 100%;
-      }
-
-      /* Remove margin from image-left in mobile view */
-      .image-left {
-        width: 80%;
-        margin-right: 0;
-        margin-bottom: 20px;
-      }
+      .container { flex-direction: column; align-items: center; }
+      .image, .image-left { width: 80%; margin-top: 20px; }
+      .text { width: 100%; }
+      .image-left { width: 80%; margin-right: 0; margin-bottom: 20px; }
     }
-
-    /* For containers with no image, adjust text section to take full width */
-    .container.no-image .text {
-      flex: 1 0 100%;
-      max-width: 100%;
-    }
+    .container.no-image .text { flex: 1 0 100%; max-width: 100%; }
   </style>
 </head>
-  
   
 <body> 
   

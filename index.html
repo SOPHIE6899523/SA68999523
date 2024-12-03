@@ -88,16 +88,15 @@
    
     /* Abstract Section - Justified Text */
     #Abstract {
-      padding: 10px
+      padding: 20px
       text-align: justify;
-      margin: 0 20px;
       width: 100%;
       
     }
 
     /* Introduction Section - Justified Text */
     #Introduction {
-      padding: 10px;
+      padding: 20px;
       text-align: justify;
     }
 
@@ -105,7 +104,7 @@
 .container {
   display: flex;
   gap: 20px;
-  padding: 10px;
+  padding: 20px;
   align-items: stretch; /* Ensures both image and text are stretched to same height */
   flex-wrap: wrap; /* Allow wrapping on smaller screens */
 }
@@ -114,7 +113,7 @@
     .text {
       flex: 1;
       max-width: 65%;
-      padding-left: 10px;
+      padding-left: 20px;
       display: flex;
       flex-direction: column;
       justify-content: space-between; /* Ensures text fills available space evenly */
@@ -156,8 +155,8 @@
         
 /* Adjust text container (no-image) to maintain consistent margins */
 .container.no-image .text {
-  padding-left: 10px; /* Ensures left margin for all paragraphs */
-  margin-left: 0; /* Ensure no unwanted margin */
+  padding-left: 20px; /* Ensures left margin for all paragraphs */
+  margin-left: 20; /* Ensure no unwanted margin */
   padding-right: 0; /* Remove any right padding */
   max-width: 100%; /* Ensure full width for text container */
 }
@@ -165,14 +164,14 @@
 /* Additional adjustments to ensure h3 and p elements align */
 .container.no-image .text h3,
 .container.no-image .text p {
-  margin-left: 0; /* Remove left margin from h3 and p */
+  margin-left: 20; /* Remove left margin from h3 and p */
   padding-left: 0; /* Remove left padding from h3 and p */
 }
 
     
       /* Update the left margin for all paragraphs within .text */
 .text p {
-  margin-left: 10px; /* Apply 10px left margin to all paragraphs */
+  margin-left: 20px; /* Apply 10px left margin to all paragraphs */
 }
     
     /* Responsive design for smaller screens */

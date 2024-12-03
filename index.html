@@ -178,10 +178,20 @@
       }
     }
 
-    /* For containers with no image, adjust text section to take full width */
-    .container.no-image .text {
-      max-width: 100%;
-    }
+    /* Adjust text container */
+.container.no-image .text {
+  margin: 0; /* Remove any extra margin */
+  padding-left: 0; /* Remove any left padding */
+  padding-right: 0; /* Remove any right padding */
+  max-width: 100%; /* Ensure full width for text container */
+}
+
+/* Additional adjustments to ensure h3 and p elements align */
+.container.no-image .text h3,
+.container.no-image .text p {
+  margin-left: 0; /* Remove left margin from h3 and p */
+  padding-left: 0; /* Remove left padding from h3 and p */
+}
   </style>
 </head>
   

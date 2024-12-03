@@ -86,26 +86,38 @@
     }
 
   /* Ensure consistent left alignment for all text in Abstract and Introduction sections */
-#Abstract, #Introduction {
+#Abstract {
   padding-left: 20px; /* Add consistent left padding for Abstract and Introduction headings */
 }
 
 /* Ensure uniform margin for headings within the Introduction and Abstract sections */
-#Abstract h3, #Introduction h3 {
+#Abstract h3 {
   margin-left: 0; /* Remove any extra margin for headings */
   padding-left: 0; /* Remove any extra padding */
 }
 
 /* Ensure consistent left margin for paragraphs under Introduction and Abstract */
-#Abstract p, #Introduction p {
+#Abstract p {
   margin-left: 20px; /* Apply consistent left margin for paragraphs */
   text-align: justify; /* Ensure paragraphs are justified */
 }
 
-/* Apply the same rule for subsections in Introduction like "The Dream of Flying" */
-#Introduction .text h3, #Introduction .text p {
-  margin-left: 20px; /* Apply consistent left margin to all subsections */
-  padding-left: 0; /* Ensure no extra padding for headings */
+/* Ensure consistent left margin for the Introduction section */
+#Introduction .text {
+  padding-left: 20px; /* Apply left padding to text within Introduction */
+}
+
+/* Ensure headings in the Introduction are aligned properly */
+#Introduction .text h3 {
+  margin-left: 0;  /* Remove extra margin */
+  padding-left: 0;  /* Remove any unnecessary padding */
+}
+
+/* Ensure paragraphs in the Introduction have left margin for alignment */
+#Introduction .text p {
+  margin-left: 20px;  /* Apply consistent left margin for paragraphs */
+  padding-left: 0;    /* Remove any padding */
+  text-align: justify; /* Justify the paragraph text */
 }
     
    /* Container for image and text sections */
@@ -240,12 +252,13 @@
             <h3 id="The Dream of Flying"><b> The Dream of Flying </b></h3>
          
     <p>
-    The journey of human flight began with a simple observation: birds soaring effortlessly through the skies. While the Wright brothers often receive
+      The journey of human flight began with a simple observation: birds soaring effortlessly through the skies. While the Wright brothers often receive
       credit for the first powered flight, the journey toward aviation began centuries earlier. Throughout history, aviation innovators studied bird
       flight patterns.  Albatross, with its extraordinary ability to fly vast distances using minimal energy, became a key model for understanding the 
       concept of aerodynamics. As Bijker (2010, p. 612) argues, "Aviation represents a quintessential human endeavour of technological imagination, where each flight embodies the collective dream of transcending natural limitations." 
 </p>
   </div>
+            </div>
 
  <!-- Image and caption on the right -->
     <div style="float: right; width: 35%; margin-left: 20px;">

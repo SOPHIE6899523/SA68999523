@@ -101,14 +101,14 @@
       text-align: justify;
     }
 
-    /* Container for image and text sections */
-    .container {
-      display: flex;
-      gap: 20px;
-      padding: 20px;
-      align-items: stretch; /* Ensures both image and text are stretched to same height */
-      flex-wrap: wrap; /* Allow wrapping on smaller screens */
-    }
+   /* Container for image and text sections */
+.container {
+  display: flex;
+  gap: 20px;
+  padding: 20px;
+  align-items: stretch; /* Ensures both image and text are stretched to same height */
+  flex-wrap: wrap; /* Allow wrapping on smaller screens */
+}
 
     /* Text Section */
     .text {
@@ -178,10 +178,10 @@
       }
     }
 
-    /* Adjust text container */
+  /* Adjust text container (no-image) to maintain consistent margins */
 .container.no-image .text {
-  margin: 0; /* Remove any extra margin */
-  padding-left: 0; /* Remove any left padding */
+  padding-left: 20px; /* Ensures left margin for all paragraphs */
+  margin-left: 0; /* Ensure no unwanted margin */
   padding-right: 0; /* Remove any right padding */
   max-width: 100%; /* Ensure full width for text container */
 }
@@ -192,6 +192,7 @@
   margin-left: 0; /* Remove left margin from h3 and p */
   padding-left: 0; /* Remove left padding from h3 and p */
 }
+
   </style>
 </head>
   
@@ -393,7 +394,7 @@
 
 <div class="container no-image">
     <div class="text">
-      <h3 id="Abstract">Conference presentation- Wings Beyond Limits: A Century of Aviation Evolution </h3>
+      <h3 id="Conference presentation- Wings Beyond Limits: A Century of Aviation Evolution"> Conference presentation- Wings Beyond Limits: A Century of Aviation Evolution </h3>
 
   <video src="ENG0018 conference ppt (compressed).mp4" width= "800" height="450" controls>
   </video>

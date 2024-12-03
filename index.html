@@ -166,6 +166,10 @@
         margin-top: 20px;
       }
 
+      /* Update the left margin for all paragraphs within .text */
+.text p {
+  margin-left: 10px; /* Apply 10px left margin to all paragraphs */
+}
       .text {
         width: 100%;
       }
@@ -178,14 +182,12 @@
       }
     }
     
-/* Update left padding to 10px */
-.text {
-  padding-left: 10px;  /* Change from 20px to 10px */
-}
-
-/* Ensure left padding is 10px for all paragraphs in no-image containers */
+/* Adjust text container (no-image) to maintain consistent margins */
 .container.no-image .text {
-  padding-left: 10px;  /* Change from 20px to 10px */
+  padding-left: 20px; /* Ensures left margin for all paragraphs */
+  margin-left: 0; /* Ensure no unwanted margin */
+  padding-right: 0; /* Remove any right padding */
+  max-width: 100%; /* Ensure full width for text container */
 }
 
 /* Additional adjustments to ensure h3 and p elements align */
@@ -194,7 +196,6 @@
   margin-left: 0; /* Remove left margin from h3 and p */
   padding-left: 0; /* Remove left padding from h3 and p */
 }
-
   </style>
 </head>
   

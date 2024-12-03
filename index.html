@@ -85,20 +85,20 @@
       line-height: 1.6; /* Line height to improve readability */
     }
 
-   
-    /* Abstract Section - Justified Text */
-    #Abstract {
-      padding: 20px
-      text-align: justify;
-      width: 100%;
-      
-    }
+   /* Ensure consistent left alignment for all text in Abstract and Introduction sections */
+#Abstract, #Introduction {
+  padding-left: 20px; /* Add consistent left padding for Abstract and Introduction headings */
+}
 
-    /* Introduction Section - Justified Text */
-    #Introduction {
-      padding: 20px;
-      text-align: justify;
-    }
+#Abstract h3, #Introduction h3 {
+  margin-left: 0; /* Ensure no additional margin for headings */
+}
+
+/* Ensure uniform margin for paragraphs under Introduction and Abstract */
+#Abstract p, #Introduction p {
+  margin-left: 20px; /* Set consistent left margin for paragraphs */
+  text-align: justify; /* Ensure text is justified */
+}
 
    /* Container for image and text sections */
 .container {

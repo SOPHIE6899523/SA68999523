@@ -181,7 +181,7 @@
  <!-- Image and caption on the right -->
     <div style="float: right; width: 35%; margin-left: 20px;">
     <img src="Albatross.jpg" alt="Albatross" style="width: 100%; height: auto; object-fit: cover;">
-        <figcaption style="text-align: center; font-style: italic;">  Fig. 1 Albatross </figcaption>
+       <fig id ="Figure1"> <figcaption style="text-align: center; font-style: italic;">  Fig. 1 Albatross </figcaption> </fig>
     </div>
              
      </div>
@@ -462,9 +462,10 @@
     const Heading8Count = displayWordCount("Heading8");
     const Heading9Count = displayWordCount("Heading9");
     const Heading10Count = displayWordCount("Heading10");
+    const Figure1Count = displayWordCount("Figure1");
     
     // Calculate the sum of all selected sections
-    const totalWordCount = Introduction1Count + Introduction2Count + Introduction3Count + Introduction4Count + Introduction5Count + Introduction6Count + Introduction7Count + Introduction8Count + Introduction9Count + Introduction10Count + Heading1Count + Heading2Count + Heading3Count + Heading4Count + Heading5Count + Heading6Count + Heading7Count + Heading8Count + Heading9Count + Heading10Count;
+    const totalWordCount = Introduction1Count + Introduction2Count + Introduction3Count + Introduction4Count + Introduction5Count + Introduction6Count + Introduction7Count + Introduction8Count + Introduction9Count + Introduction10Count + Heading1Count + Heading2Count + Heading3Count + Heading4Count + Heading5Count + Heading6Count + Heading7Count + Heading8Count + Heading9Count + Heading10Count + Figure1Count;
     // Display the total word count
     document.getElementById("totalWordCount").innerText = `Total word count: ${totalWordCount}`;
   }

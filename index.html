@@ -196,7 +196,7 @@
     <figure style="float: left; width: 45%; margin-right: 20px;">
         <img src="Wright Brother's Plane.jpg" alt="Wright Brother's Plane" style="width: 100%; height: auto; object-fit: cover;">
         <!-- Caption inside the figure -->
-        <figcaption style="text-align: center; font-style: italic;">Fig. 2 Wright Brothers </figcaption>
+      <fig id ="Figure2">  <figcaption style="text-align: center; font-style: italic;">Fig. 2 Wright Brothers </figcaption> </fig>
     </figure>
     
     <div class="text">
@@ -241,7 +241,7 @@
 
        <div style="float: right; width: 35%; margin-left: 20px;">
         <img src="Douglas DC 3.jpg" alt="Douglas DC 3" style="width: 100%; height: auto; object-fit: cover;">
-         <figcaption style="text-align: center; font-style: italic;"> Fig. 3 Douglas DC 3 </figcaption>
+      <fig id ="Figure3"> <figcaption style="text-align: center; font-style: italic;"> Fig. 3 Douglas DC 3 </figcaption> </fig>
    
     </div>
       
@@ -264,7 +264,7 @@
         <!-- B-29 Image Block with Reduced Space Between Paragraph -->
         <div style="width: 95%; margin: 10px auto 0; text-align: center;">
             <img src="B 29 Superfortress.jpg" alt="B-29 Superfortress" style="width: 100%; height: auto; object-fit: cover;">
-            <figcaption style="text-align: center; font-style: italic;">Fig. 4 B-29 Superfortress</figcaption>
+          <fig id ="Figure4"> <figcaption style="text-align: center; font-style: italic;">Fig. 4 B-29 Superfortress</figcaption> </fig>
         </div>
       
 <!-- Golden Age of Commercial Aviation Section with Proper Spacing -->
@@ -281,7 +281,7 @@
     <!-- Image of Lockheed Constellation on the right with Proper Spacing -->
     <div style="float: right; width: 35%; margin-left: 20px; margin-top: 20px;">
         <img src="Lockheed Constellation.jpg" alt="Lockheed Constellation/Connie" style="width: 100%; height: auto; object-fit: cover;">
-        <figcaption style="text-align: center; font-style: italic;"> Fig. 5 Connie</figcaption>
+       <fig id ="Figure5"> <figcaption style="text-align: center; font-style: italic;"> Fig. 5 Connie</figcaption> </fig>
     </div>
 </div>
 
@@ -304,7 +304,7 @@
 <div class="container">
    <figure style="float: left; width: 45%; margin-right: 20px;">
             <img src="Ryan Air.jpg" alt="Ryan Air" style="width: 100%; height: auto; object-fit: cover;">
-            <figcaption style="text-align: center; font-style: italic;"> Fig. 6 Ryan Air</figcaption>
+           <fig id ="Figure6"> <figcaption style="text-align: center; font-style: italic;"> Fig. 6 Ryan Air</figcaption> </fig>
         </figure>
         
         <div class="text">
@@ -341,7 +341,7 @@
 
       <div style="float: right; width: 35%; margin-left: 20px;">
             <img src="Airbus.jpg" alt="Airbus" style="width: 100%; height: auto; object-fit: cover;">
-            <figcaption style="text-align: center; font-style: italic;">Fig. 7 Airbus</figcaption>
+           <fig id ="Figure7"> <figcaption style="text-align: center; font-style: italic;">Fig. 7 Airbus</figcaption> </fig>
         </div>
 </div>
 
@@ -463,9 +463,19 @@
     const Heading9Count = displayWordCount("Heading9");
     const Heading10Count = displayWordCount("Heading10");
     const Figure1Count = displayWordCount("Figure1");
+    const Figure2Count = displayWordCount("Figure2");
+    const Figure3Count = displayWordCount("Figure3");
+    const Figure4Count = displayWordCount("Figure4");
+    const Figure5Count = displayWordCount("Figure5");
+    const Figure6Count = displayWordCount("Figure6");
+    const Figure7Count = displayWordCount("Figure7");
     
     // Calculate the sum of all selected sections
-    const totalWordCount = Introduction1Count + Introduction2Count + Introduction3Count + Introduction4Count + Introduction5Count + Introduction6Count + Introduction7Count + Introduction8Count + Introduction9Count + Introduction10Count + Heading1Count + Heading2Count + Heading3Count + Heading4Count + Heading5Count + Heading6Count + Heading7Count + Heading8Count + Heading9Count + Heading10Count + Figure1Count;
+    const totalWordCount = Introduction1Count + Introduction2Count + Introduction3Count + Introduction4Count + 
+      Introduction5Count + Introduction6Count + Introduction7Count + Introduction8Count + Introduction9Count + 
+      Introduction10Count + Heading1Count + Heading2Count + Heading3Count + Heading4Count + Heading5Count + 
+      Heading6Count + Heading7Count + Heading8Count + Heading9Count + Heading10Count + Figure1Count + Figure2Count 
+      + Figure3Count + Figure4Count + Figure5Count + Figure6Count + Figure7Count;
     // Display the total word count
     document.getElementById("totalWordCount").innerText = `Total word count: ${totalWordCount}`;
   }

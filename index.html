@@ -21,105 +21,207 @@
   </div>
 
   
-  <!style for tables>
   <style>
-    table  {
-    font-family: aptos, sans-serif;
-      border-collapse: collapse;
-      width:30%;
-       margin-left: 10px; /* Adds a margin of 10px from the left */
-    }
+        body {
+            font-family: 'Arial', sans-serif;
+            margin: 0;
+            padding: 20px;
+        }
 
-    td, th {
-      border: 1px solid #dddddd;
-      text-align: left;
-      padding: 8px;
-    }
+        table {
+            width: 100%;
+            max-width: 800px;
+            margin: 20px auto;
+            border-collapse: collapse;
+            background-color: #ffffff; /* Table background white */
+            box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.1);
+            border: 2px solid #2c3e50; /* Bold blue border for the whole table */
+        }
 
-    tr:nth-child(even)  {
-      background-color: #dddddd;
-    }
+        /* Table of Contents Heading */
+        th {
+            background-color: #ffffff; /* Table of Contents Background White */
+            color: #2c3e50; /* Dark blue text color */
+            padding: 20px;
+            text-align: center;
+            font-size: 24px;
+            font-family: 'Georgia', serif; /* Reverted back to 'Georgia' font */
+            border-top-left-radius: 8px;
+            border-top-right-radius: 8px;
+            height: 100px;
+            position: relative;
+            font-weight: normal; /* Remove bolding for this header */
+            text-decoration: double underline; /* Apply double underline */
+        }
 
- h3 {
-      margin: 0;
-      padding: 0;
-    }
+        /* Right image (Plane Routes) at the top-right corner, now bigger */
+        th::before {
+            content: "";
+            position: absolute;
+            top: 10px; /* Slightly lower to avoid overlap */
+            right: 0px; /* Right side */
+            background-image: url('https://static.vecteezy.com/system/resources/thumbnails/043/853/215/small_2x/continuous-heart-dashed-line-trace-and-plane-routes-free-vector.jpg');
+            background-size: 150px 190px; /* Increased image size by 5px */
+            background-repeat: no-repeat;
+            width: 130px;
+            height: 130px;
+            transform: translateY(-10px); /* Move the image up by 50px */
+        }
 
-    ul {
-      list-style-type: disc; /* Use bullet points */
-      margin-left: 20px; /* Indentation for bullets */
-    }
+        /* Left image (Hot Air Balloon) at the bottom-left corner, now bigger */
+        th::after {
+            content: "";
+            position: absolute;
+            bottom: 10px;
+            left: 10px;
+            background-image: url('https://t4.ftcdn.net/jpg/08/08/48/75/360_F_808487566_JF5nT618LsY7P6TtbiUzjUp4tsmBJ3ov.jpg');
+            background-size: 90px 90px; /* Increased size of the balloon image */
+            background-repeat: no-repeat;
+            width: 90px;
+            height: 90px;
+        }
 
-    li {
-      margin: 5px 0; /* Space out the bullet points */
-    }
+        td {
+            padding: 12px;
+            text-align: left;
+            font-size: 18px;
+            border-bottom: 1px solid #ddd;
+            font-weight: bold; /* Make all text bold in the table */
+        }
 
-     /* Apply margin-left for the entire content except for the banner */
-    .content-wrapper {
-      margin-left: 30px;
-    }
+        td a {
+            color: black; /* Dark blue color */
+            text-decoration: none;
+            transition: color 0.3s ease, background-color 0.3s ease;
+        }
 
-       /* Styling the links to keep them black and underlined */
-    a {
-      color: black; /* Keep the link text black */
-      text-decoration: underline; /* Keep underline */
-    }
+        td a:hover {
+            color: #ffffff;
+            background-color: #2c3e50;
+            padding: 5px 10px;
+            border-radius: 5px;
+        }
 
-    /* Optionally, add a hover effect for links */
-    a:hover {
-      color: #333333; /* Darker color on hover */
-    }
- 
-  <meta name="viewport" content="width=device-width, initial-scale=1">
-  <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
-    <style>
-      .mySlides {display;none:}
+        /* Specific rows with blue background */
+        tr:nth-child(2) {
+            background-color: #ffffff; /* White background for Abstract */
+        }
+
+        tr:nth-child(3) {
+            background-color: #34495e; /* Lighter blue background for Introduction */
+            color: white; /* White text for Introduction */
+        }
+
+        tr:nth-child(4) {
+            background-color: #ffffff; /* White background for Bullet Points */
+        }
+
+        tr:nth-child(5) {
+            background-color: #34495e; /* Lighter blue background for Conference Presentation */
+            color: white; /* White text for Conference Presentation */
+        }
+
+        tr:nth-child(6) {
+            background-color: #ffffff; /* White background for References */
+        }
+
+        tr:nth-child(2), tr:nth-child(3) {
+            border-top: 3px solid #2c3e50; /* Blue border for Abstract and Introduction */
+        }
+
+        tr:nth-child(4), tr:nth-child(5) {
+            border-top: 3px solid #2c3e50; /* Blue border for Bullet Points and Conference Presentation */
+        }
+
+        tr:nth-child(6) {
+            border-top: 3px solid #2c3e50; /* Blue border for References */
+        }
+
+        tr:hover {
+            background-color: #f7f7f7;
+        }
+
+        ul {
+            list-style-type: disc; /* Bullet points */
+            padding-left: 20px;
+            margin-top: 10px;
+        }
+
+        ul li {
+            font-size: 18px;
+            padding-left: 10px; /* Added indentation */
+            margin-bottom: 10px; /* Added spacing between list items */
+        }
+
+        ul li a {
+            text-decoration: none;
+            color: #2c3e50; /* Dark blue color for list items */
+            transition: color 0.3s ease;
+        }
+
+        ul li a:hover {
+            color: #ffffff;
+            background-color: #2c3e50;
+            padding: 5px 10px;
+            border-radius: 5px;
+        }
+
+        /* For smaller screens, make it more responsive */
+        @media (max-width: 600px) {
+            table {
+                width: 100%;
+            }
+
+            th, td {
+                padding: 10px;
+                font-size: 16px;
+            }
+
+            td a {
+                font-size: 16px;
+            }
+        }
     </style>
 </head>
+<body>
 
-  <body style="background-color:#FFFFFF;">
-
-  <!-- Wrapper for all content except the banner -->
-  <div class="content-wrapper">
-    
-  <!-- Table of Contents -->
-  <table>
+<table>
     <!-- Main Table Heading -->
     <tr>
-      <th colspan="2"><h3>Table of Contents</h3></th>
+        <th colspan="2"><h3>Table of Contents</h3></th>
     </tr>
     
-         <tr>
-      <td> <a href="#Abstract"> Abstract </td>
+    <tr>
+        <td><a href="#Abstract">Abstract</a></td>
     </tr>
-      <tr>
-      <td> <a href="#Introduction"> Introduction </td>
-    </tr>
-      </tr>
-     <tr>
-      <td colspan="2">
-        <ul>
-          <li><a href="#Heading1">The Dream of Flying</a></li>
-          <li><a href="#Heading2">First Steps in Flight</a></li>
-          <li><a href="#Heading3">The Start of Commercial Aviation</a></li>
-           <li><a href="Heading4">Early Aviators and Innovation</a></li>
-           <li><a href="Heading5">World War II: A Spark for Solutions</a></li>
-           <li><a href="Heading6">The Golden Age of Commercial Aviation</a></li>
-           <li><a href="#Heading7">The Modern Age: 1970s and Beyond</a></li>
-           <li><a href="#Heading8">Aviation's Digital Shift</a></li>
-           <li><a href="#Heading9">Post-2010 Industry: Crisis and Challenges</a></li>
-           <li><a href="#Heading10">The Sky Ahead: Navigating Tomorrow's Skies</a></li>
-           </ul>
-      </td>
-    </tr>
-      <tr>
-      <td> <a href="#Conference presentation- Wings Beyond Limits: A Century of Aviation Evolution"> Conference presentation </td>
-    </tr>
-      <tr>
-      <td> <a href="#References"> References </td>
+    <tr>
+        <td><a href="#Introduction">Introduction</a></td>
     </tr>
     
-  </table>
+    <tr>
+        <td colspan="2">
+            <ul>
+                <li><a href="#Heading1">The Dream of Flying</a></li>
+                <li><a href="#Heading2">First Steps in Flight</a></li>
+                <li><a href="#Heading3">The Start of Commercial Aviation</a></li>
+                <li><a href="#Heading4">Early Aviators and Innovation</a></li>
+                <li><a href="#Heading5">World War II: A Spark for Solutions</a></li>
+                <li><a href="#Heading6">The Golden Age of Commercial Aviation</a></li>
+                <li><a href="#Heading7">The Modern Age: 1970s and Beyond</a></li>
+                <li><a href="#Heading8">Aviation's Digital Shift</a></li>
+                <li><a href="#Heading9">Post-2010 Industry: Crisis and Challenges</a></li>
+                <li><a href="#Heading10">The Sky Ahead: Navigating Tomorrow's Skies</a></li>
+            </ul>
+        </td>
+    </tr>
+    <tr>
+        <td><a href="#Conference_presentation">Conference Presentation</a></td>
+    </tr>
+    <tr>
+        <td><a href="#References">References</a></td>
+    </tr>
+</table>
+
   </div>
 </body>
 
